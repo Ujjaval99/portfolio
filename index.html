@@ -124,18 +124,10 @@
 
     </section>
 
-    <script>
-  // Check if URL contains ?success=true
-  const urlParams = new URLSearchParams(window.location.search);
-  if (urlParams.get("success") === "true") {
-    document.getElementById("success-message").style.display = "block";
-    // Optionally, remove ?success=true from URL after showing message
-    window.history.replaceState({}, document.title, window.location.pathname);
-  }
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
