@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For charts -->
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home / Landing Page -->
+    <section id="home">
+        <img src="assets/1.png" alt="Profile Photo" class="profile-img">
+        <h1>Innovating the future, one pixel path at a time</h1>
+        <p>Frontend Developer | Cybersecurity Enthusiast | Portfolio Showcase</p>
+    </section>
+
+    <!-- About Me -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>I'm a computer engineering student skilled in HTML, CSS, JS, and cybersecurity basics.</p>
+        <h3>Skills</h3>
+        <div class="skill-bar">
+            <span>HTML</span>
+            <div class="bar"><div class="progress" style="width:90%"></div></div>
+        </div>
+        <div class="skill-bar">
+            <span>CSS</span>
+            <div class="bar"><div class="progress" style="width:80%"></div></div>
+        </div>
+        <div class="skill-bar">
+            <span>JavaScript</span>
+            <div class="bar"><div class="progress" style="width:75%"></div></div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="assets/2.png" alt="Project 1">
+                <h3>Project One</h3>
+                <p>Student Management Dashboard</p>
+            </div>
+            <div class="project-card">
+                <img src="assets/3.png" alt="Project 2">
+                <h3>Project Two</h3>
+                <p>Expense Tracker Dashboard</p>
+            </div>
+            <div class="project-card">
+                <img src="assets/4.png" alt="Project 3">
+                <h3>Project Three</h3>
+                <p>📘 Study Assistant</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="dashboard">
+        <h2>Dashboard</h2>
+        <canvas id="skillsChart" width="400" height="200"></canvas>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formsubmit.co/patelbunty800@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
